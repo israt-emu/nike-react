@@ -1,0 +1,111 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* global style */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --small-text-color:#363958;
+    --primary-color:#3745C8;
+    --secondary-color:#FA804C;
+}
+h1,h2,h3{
+    font-family: 'Bebas Neue', cursive;
+}
+p,a,small{
+    font-family: 'Roboto', sans-serif;
+}
+.buy-btn{
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: var(--primary-color);
+    border: 0;
+    border-radius: 10px;
+}
+
+/* header section */
+header{
+    background-image: url(images/Group\ 33064.png), linear-gradient(#FFFBF0, #FFFBF0);
+    background-repeat: no-repeat;
+    background-position: 40% 0;
+}
+header .nav-menu .nav-item .nav-link{
+    color: var(--small-text-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.logo{
+    width:290px;
+}
+.hero{
+    padding-bottom: 120px;
+}
+.hero-txt, .hero-img{
+    width: 50%;
+}
+.hero-txt h1{
+    color: var(--small-text-color);
+    font-size: 3.5rem;
+}
+.hero-txt h1 span{
+    color: var(--secondary-color);
+}
+
+/* shoes */
+
+.shoes h2, .formal-shoes h2{
+    font-size: 2.5rem;
+    color: var(--small-text-color);
+    font-weight: bold;
+}
+h5.card-title{
+    font-size: 1.7rem;
+    color: var(--small-text-color);
+    font-weight: bold;
+}
+.price-btn .price{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.card-img{
+    background: #F1F1F1;
+    height: 300px;
+}
+.formal-shoes .card-img{
+    background: #fff;
+}
+
+
+/* features-section */
+.features{
+    margin-bottom: 100px;
+}
+.feature h3{
+    font-family: 'Roboto', sans-serif;
+    color: var(--small-text-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* responsive css */
+
+@media only screen and (max-width:380px){
+    .logo{
+        width:190px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .card-img{
+        height:100%;
+    }
+    .hero-txt, .hero-img{
+        width: 100%;
+    }
+}
